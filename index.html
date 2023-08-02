@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV của tôi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Thêm màu nền xám nhạt cho phần tử body */
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center; /* Căn giữa tiêu đề */
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        /* Thêm kiểu cho hình ảnh đại diện */
+        .avatar {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            /* Thêm hiệu ứng hoạt hình */
+            transition: transform .2s;
+        }
+
+        .avatar:hover {
+            transform: scale(1.1);
+        }
+
+        /* Thêm kiểu cho tiêu đề mục */
+        h2 {
+          color:#333;cursor:pointer; /* Thay đổi con trỏ thành bàn tay khi di chuột qua tiêu đề */
+          font-size:
+24px;margin-bottom:
+10px;text-align:center; /* Căn giữa tiêu đề */
+          text-transform:
+uppercase; /* Viết hoa tất cả các ký tự */
+        }
+        /* Thêm kiểu cho nội dung mục */
+        p, li {
+          color:#666;font-size:
+18px;line-height:
+1.5; /* Tăng khoảng cách giữa các dòng */
+          margin-bottom:
+10px; /* Thêm khoảng cách dưới mỗi đoạn văn hoặc mục danh sách */
+        }
+        /* Thêm kiểu cho khung thông tin cá nhân */
+        #personal-info-box {
+          background-color:#f4f4f4; /* Nền màu xám nhạt */
+          border-radius:
+5px; /* Góc bo tròn */
+          box-shadow:
+0
+2px
+4px
+rgba(0,0,0,0.1); /* Thêm bóng nhẹ */
+          display:none; /* Ẩn khung mặc định */
+          padding-top:
+20px; /* Thêm lề trên cho nội dung */
+          width:auto; /* Đặt chiều rộng tự động cho khung */
+          z-index:auto; /* Đảm bảo khung được hiển thị trên các phần tử khác trên trang */
+          position:relative; /* Định vị khung tương đối so với phần tử cha của nó */
+          right:auto; /* Định vị khung bên phải phần tử cha của nó */
+          top:auto; /* Định vị khung trên phần tử cha của nó */
+        }
+
+        /* Thêm kiểu cho khung thông tin liên hệ, kinh nghiệm làm việc và trình độ học vấn */
+        #contact-details, #work-experience-details, #education-details, #skills-details {
+            background-color: #f4f4f4; /* Nền màu xám nhạt */
+            border-radius: 5px; /* Góc bo tròn */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Thêm bóng nhẹ */
+            padding: 20px; /* Thêm lề cho nội dung */
+        }
+
+/* Thêm kiểu cho chú giải */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Định vị chú giải */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Thêm kiểu để căn giữa phần thông tin cá nhân và nội dung của nó */
+#personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#personal-info-box {
+    text-align: center;
+}
+
+/* Thêm kiểu để căn giữa phần kinh nghiệm làm việc và học vấn và nội dung của chúng */
+#work-experience, #education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#work-experience-details, #education-details {
+    text-align: center;
+}
+
+/* Thêm kiểu để căn giữa phần liên hệ và nội dung của nó */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact-details {
+    text-align: center;
+}
+/* Thêm kiểu để căn giữa phần kỹ năng và nội dung của nó */
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#skills-details {
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CV của tôi</h1>
+    </header>
+    <section id="personal-info">
+        <!-- Thêm hình ảnh đại diện -->
+        <img class="avatar" src="https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.30808-6/363820514_265778829566008_4740637509373731766_n.jpg?_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4yFtGuj9PcoAX_BJRcM&_nc_ht=scontent.fsgn3-1.fna&oh=00_AfBu60w7UPkxmhBkQahfT9ALmmIstBDWvhnnMqB2uWWjtQ&oe=64C8DE79" alt="Ảnh đại diện">
+        <div class="tooltip">
+            <h2 onclick="toggleVisibility('personal-info-box')">Thông tin cá nhân</h2>
+            <span class="tooltiptext">Nhấp vào đây để xem thông tin cá nhân của tôi</span>
+        </div>
+    </section>
+    <div id="personal-info-box">
+      <p>Tên: Lê Phúc Tài</p>
+      <p>Ngày sinh: 16/07/2003</p>
+      <p>Địa chỉ: Số 458/3e, Đường Nguyễn Hữu Thọ, Quận 7, TP.HCM</p>
+      <p>Email: tai1672003@gmail.com</p>
+    </div>
+
+    <!-- Thêm phần thông tin liên hệ -->
+    <section id="contact">
+        <div class="tooltip">
+            <h2 onclick="toggleVisibility('contact-details')">Thông tin liên hệ</h2>
+            <span class="tooltiptext">Nhấp vào đây để xem thông tin liên hệ của tôi</span>
+        </div>
+        <div id="contact-details" style="display:none;">
+            <p>Điện thoại: 0365599224</p>
+            <p>Email: tai1672003@gmail.com</p>
+            <p>Địa chỉ: Số 458/3e, Đường Nguyễn Hữu Thọ, Quận 7, TP.HCM</p>
+        </div>
+    </section>
+
+    <!-- Thêm phần kỹ năng -->
+    <section id="skills">
+        <div class="tooltip">
+            <h2 onclick="toggleVisibility('skills-details')">Kỹ năng</h2>
+            <span class="tooltiptext">Nhấp vào đây để xem kỹ năng của tôi</span>
+        </div>
+        <ul id="skills-details" style="display:none;">
+            <li>HTML: 90%</li>
+            <li>CSS: 80%</li>
+            <li>JavaScript: 70%</li>
+            <li>React: 60%</li>
+        </ul>
+    </section>
+
+    <!-- Thêm phần kinh nghiệm làm việc -->
+    <section id="work-experience">
+        <div class="tooltip">
+            <h2 onclick="toggleVisibility('work-experience-details')">Kinh nghiệm làm việc</h2>
+            <span class="tooltiptext">Nhấp vào đây để xem kinh nghiệm làm việc của tôi</span>
+        </div>
+        <ul id="work-experience-details" style="display:none;">
+            <li>Từng thực tập tại 1 số công ty cho vị trí tester </li>
+            <li>Có đóng góp và tham gia 1 số dự án về công nghệ thông tin</li>
+        </ul>
+    </section>
+
+    <!-- Thêm phần trình độ học vấn -->
+    <section id="education">
+        <div class="tooltip">
+            <h2 onclick="toggleVisibility('education-details')">Trình độ học vấn</h2>
+            <span class="tooltiptext">Nhấp vào đây để xem trình độ học vấn của tôi</span>
+        </div>
+        <ul id="education-details" style="display:none;">
+            <li>Đại học Nguyễn Tất Thành - Cử nhân công nghệ thông tin (2021-2025)</li>
+            <li>Tốt nghiệp trung học phổ thông (2020)</li>
+        </ul>
+    </section>
+
+    <footer>CV của tôi - Cập nhật lần cuối vào ngày 29/07/2023</footer>
+
+    <script type="text/javascript">
+      function toggleVisibility(id) {
+          var element = document.getElementById(id);
+          if (element.style.display === "none") {
+              element.style.display = "block";
+          } else {
+              element.style.display = "none";
+          }
+      }
+    </script>
+</body>
+</html>
